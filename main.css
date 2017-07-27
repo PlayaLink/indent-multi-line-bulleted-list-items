@@ -1,0 +1,16 @@
+ul {
+    display: table;
+    li {
+        list-style: disc;
+        list-style-position: inside;
+        display: table-row;
+
+        &:before {
+            content: '\2022';
+            display: table-cell;
+            text-align: right;
+            padding-right: 0.2rem;
+        }
+    }
+
+}
